@@ -17,10 +17,6 @@ var _load = function() {
     : 'production';
 
   console.log('Current Environment: ', ENV);
-  console.dir(_.merge(
-    _configs.global(__dirname),
-    _configs[ENV](__dirname)
-  ));
   // load config file by environment
   return _configs && _.merge(
     _configs.global(__dirname),
